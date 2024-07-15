@@ -119,7 +119,7 @@ int main(int argc, char **argv)  {
 		
 		break;
 		case '-':
-			for (int i = 1; i <= 10; i++) {
+			for (int number = 1; number <= 10; number++) {
 			if(FLAG_NUMBER)	{
 				Scalar_Multiplication(G,&B,number);
 			}
