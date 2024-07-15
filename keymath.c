@@ -119,6 +119,7 @@ int main(int argc, char **argv)  {
 		
 		break;
 		case '-':
+			for (int i = 1; i <= 10; i++) {
 			if(FLAG_NUMBER)	{
 				Scalar_Multiplication(G,&B,number);
 			}
@@ -126,6 +127,7 @@ int main(int argc, char **argv)  {
 			mpz_set(B.x,C.x);
 			mpz_set(B.y,C.y);
 			Point_Addition(&A,&B,&C);
+			}
 		break;
 		case '/':
 			if(!FLAG_NUMBER)	{
